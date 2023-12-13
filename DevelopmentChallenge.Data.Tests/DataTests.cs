@@ -114,7 +114,7 @@ namespace DevelopmentChallenge.Data.Tests
             var resumen = reporte.Imprimir(formas);
 
             Assert.AreEqual(
-                "<h1>Rapporto sui moduli</h1>2 Cuadrados | Area 29 | Perimetro 28 <br/>2 Círculos | Area 13.01 | Perimetro 18.06 <br/>3 Triángulos | Area 49.64 | Perimetro 51.6 <br/>TOTAL:<br/>7 formas Perimetro 97.66 Area 91.65",
+                "<h1>Rapporto sui moduli</h1>2 Piazze | La zona 29 | Perimetro 28 <br/>2 Cerchi | La zona 13.01 | Perimetro 18.06 <br/>3 Triangoli | La zona 49.64 | Perimetro 51.6 <br/>TOTALE:<br/>7 forme Perimetro 97.66 La zona 91.65",
                 resumen);
         }
     }

@@ -4,27 +4,27 @@
     {
         public override string TituloListaVaciaTexto => "<h1>Elenco vuoto di forme!</h1>";
         public override string TituloTexto => "<h1>Rapporto sui moduli</h1>";
-        public override string PieTexto => "TOTAL:<br/>";
+        public override string PieTexto => "TOTALE:<br/>";
 
         public override string ObtenerLinea(ResumenTipo resumen)
         {
-            var tipoDescripcion = resumen.Cantidad > 1 ? TiposDescripcion.Ingles[resumen.Tipo].Plural : TiposDescripcion.Ingles[resumen.Tipo].Singular;
-            return $"{resumen.Cantidad} {tipoDescripcion} | Area {resumen.Area:#.##} | Perimeter {resumen.Perimetro:#.##} <br/>";            
+            var tipoDescripcion = resumen.Cantidad > 1 ? TiposDescripcion.Italiano[resumen.Tipo].Plural : TiposDescripcion.Italiano[resumen.Tipo].Singular;
+            return $"{resumen.Cantidad} {tipoDescripcion} | La zona {resumen.Area:#.##} | Perimetro {resumen.Perimetro:#.##} <br/>";            
         }
 
         public override string ObtenerCantidadTotalTexto(int cantidad)
         {
-            return $"{cantidad} shapes ";
+            return $"{cantidad} forme ";
         }
 
         public override string ObtenerAreaTotalTexto(decimal area)
         {
-            return $"Area {area.ToString("#.##")}";
+            return $"La zona {area.ToString("#.##")}";
         }
      
         public override string ObtenerPerimetroTotalTexto(decimal perimetro)
         {
-            return $"Perimeter {perimetro.ToString("#.##")} ";
+            return $"Perimetro {perimetro.ToString("#.##")} ";
         }
     }
 }

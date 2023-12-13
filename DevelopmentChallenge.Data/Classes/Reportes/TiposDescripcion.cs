@@ -24,5 +24,12 @@ namespace DevelopmentChallenge.Data.Classes.Reportes
             { "Circulo", new TipoDescripcion { Singular = "Circle", Plural = "Circles" }},
             { "TrianguloEquilatero", new TipoDescripcion { Singular = "Triangle", Plural = "Triangles" }},
         };
+
+        public static Dictionary<string, TipoDescripcion> Italiano = new Dictionary<string, TipoDescripcion>()
+        {
+            { "Cuadrado", new TipoDescripcion { Singular = "Piazza", Plural = "Piazze" }},
+            { "Circulo", new TipoDescripcion { Singular = "Cerchio", Plural = "Cerchi" }},
+            { "TrianguloEquilatero", new TipoDescripcion { Singular = "Triangolo", Plural = "Triangoli" }},
+        };
     }
 }
