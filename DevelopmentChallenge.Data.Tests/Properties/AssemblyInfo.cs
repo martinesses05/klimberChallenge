@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -9,7 +10,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("DevelopmentChallenge.Data.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
+[assembly: AssemblyCulture("en-US")]
+[assembly: SetCulture("en-US")]
+[assembly: SetUICulture("en-US")]
+
 
 [assembly: ComVisible(false)]
 
